@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="vi" class="notranslate">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google" content="notranslate">
     <title>Shop Hùng Media - Hệ Thống Tài Nguyên Số</title>
-    <!-- Nhúng FontAwesome Icon chuẩn quốc tế -->
-    <link rel="stylesheet" href="https://cloudflare.com" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cloudflare.com" />
     <style>
-        * { box-shadow: none; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; }
+        * { box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; }
         body { background-color: #f0f2f5; padding: 20px; }
         .container { max-width: 1200px; margin: 0 auto; }
         .top-widgets { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 25px; }
-        .widget-box { display: flex; align-items: center; padding: 15px; border-radius: 10px; color: white; text-decoration: none; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .widget-box { display: flex; align-items: center; padding: 15px; border-radius: 10px; color: white; text-decoration: none; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.2s; }
         .widget-box:hover { transform: translateY(-3px); }
-        .widget-box i { font-size: 30px; margin-right: 15px; }
-        .widget-box .text span { display: block; font-size: 12px; font-weight: normal; opacity: 0.9; }
+        .widget-box i { font-size: 28px; margin-right: 12px; }
+        .widget-box .text span { display: block; font-size: 11px; font-weight: normal; opacity: 0.9; }
         .w-blue { background: linear-gradient(135deg, #0062cc, #007bff); }
         .w-teal { background: linear-gradient(135deg, #117a8b, #17a2b8); }
         .w-purple { background: linear-gradient(135deg, #6f42c1, #8553e6); }
@@ -24,9 +22,9 @@
         .category-block { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 20px; }
         .category-title { font-size: 16px; font-weight: bold; color: #333; border-left: 4px solid #007bff; padding-left: 10px; margin-bottom: 20px; text-transform: uppercase; }
         .buttons-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
-        .btn-item { display: flex; align-items: center; justify-content: flex-start; padding: 12px 15px; border-radius: 6px; font-size: 12px; font-weight: bold; color: white; text-decoration: none; text-transform: uppercase; border: 1px solid rgba(0,0,0,0.1); box-shadow: inset 0 1px 0 rgba(255,255,255,0.15), 0 1px 1px rgba(0,0,0,0.075); transition: all 0.2s; }
-        .btn-item:hover { filter: brightness(1.2); transform: scale(1.02); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
-        .btn-item i { font-size: 16px; margin-right: 10px; width: 20px; text-align: center; }
+        .btn-item { display: flex; align-items: center; justify-content: flex-start; padding: 12px 15px; border-radius: 6px; font-size: 12px; font-weight: bold; color: white; text-decoration: none; text-transform: uppercase; border: 1px solid rgba(0,0,0,0.1); transition: 0.2s; }
+        .btn-item:hover { filter: brightness(1.2); transform: scale(1.02); }
+        .btn-item i { font-size: 15px; margin-right: 10px; width: 20px; text-align: center; }
         .c-dark { background-color: #212529; }
         .c-blue { background-color: #007bff; }
         .c-indigo { background-color: #3f51b5; }
@@ -41,40 +39,35 @@
 </head>
 <body>
 <div class="container">
-    <!-- 4 Ô TIỆN ÍCH TOP -->
     <div class="top-widgets">
-        <a href="#" class="widget-box w-blue"><i class="fab fa-facebook"></i><div class="text">Check Live FB <span>Miễn phí</span></div></a>
-        <a href="#" class="widget-box w-teal"><i class="fas fa-key"></i><div class="text">Lấy Mã 2FA <span>Miễn phí</span></div></a>
-        <a href="#" class="widget-box w-purple"><i class="fas fa-smile"></i><div class="text">Icon Facebook <span>Miễn phí</span></div></a>
-        <a href="#" class="widget-box w-orange"><i class="fas fa-user-astronaut"></i><div class="text">Random Face <span>Miễn phí</span></div></a>
+        <a href="#" class="widget-box w-blue"><i class="fa-brands fa-facebook"></i><div class="text">Check Live FB <span>Miễn phí</span></div></a>
+        <a href="#" class="widget-box w-teal"><i class="fa-solid fa-key"></i><div class="text">Lấy Mã 2FA <span>Miễn phí</span></div></a>
+        <a href="#" class="widget-box w-purple"><i class="fa-solid fa-face-smile"></i><div class="text">Icon Facebook <span>Miễn phí</span></div></a>
+        <a href="#" class="widget-box w-orange"><i class="fa-solid fa-user"></i><div class="text">Random Face <span>Miễn phí</span></div></a>
     </div>
-
-    <!-- KHỐI DANH MỤC 1 -->
     <div class="category-block">
-        <div class="category-title"><i class="fas fa-shopping-basket"></i> Danh mục tài khoản Clone / Via FB</div>
+        <div class="category-title">Danh mục tài khoản Clone / Via FB</div>
         <div class="buttons-grid">
-            <a href="#" class="btn-item c-dark"><i class="fab fa-telegram-plane"></i> Telegram mua nhanh</a>
-            <a href="#" class="btn-item c-pink"><i class="fab fa-instagram"></i> Instagram Via</a>
-            <a href="#" class="btn-item c-blue"><i class="fab fa-facebook-f"></i> Clone cổ ngâm</a>
-            <a href="#" class="btn-item c-blue"><i class="fab fa-facebook-f"></i> Via cổ kháng bvd</a>
-            <a href="#" class="btn-item c-green"><i class="fas fa-shield-alt"></i> BM kháng 902</a>
-            <a href="#" class="btn-item c-teal"><i class="fas fa-globe-asia"></i> Acc Europe - Asia</a>
-            <a href="#" class="btn-item c-red"><i class="fas fa-flag-usa"></i> Acc USA chuẩn cổ</a>
-            <a href="#" class="btn-item c-indigo"><i class="fas fa-bolt"></i> Tút Reg Fanpage</a>
+            <a href="#" class="btn-item c-dark"><i class="fa-brands fa-telegram"></i> Telegram mua nhanh</a>
+            <a href="#" class="btn-item c-pink"><i class="fa-brands fa-instagram"></i> Instagram Via</a>
+            <a href="#" class="btn-item c-blue"><i class="fa-brands fa-facebook-f"></i> Clone cổ ngâm</a>
+            <a href="#" class="btn-item c-blue"><i class="fa-brands fa-facebook-f"></i> Via cổ kháng bvd</a>
+            <a href="#" class="btn-item c-green"><i class="fa-solid fa-shield-halved"></i> BM kháng 902</a>
+            <a href="#" class="btn-item c-teal"><i class="fa-solid fa-earth-asia"></i> Acc Europe - Asia</a>
+            <a href="#" class="btn-item c-red"><i class="fa-solid fa-flag-usa"></i> Acc USA chuẩn cổ</a>
+            <a href="#" class="btn-item c-indigo"><i class="fa-solid fa-bolt"></i> Tút Reg Fanpage</a>
         </div>
     </div>
-
-    <!-- KHỐI DANH MỤC 2 -->
     <div class="category-block">
-        <div class="category-title"><i class="fas fa-laptop-code"></i> Công nghệ AI & Phần mềm premium</div>
+        <div class="category-title">Công nghệ AI & Phần mềm premium</div>
         <div class="buttons-grid">
-            <a href="#" class="btn-item c-dark"><i class="fas fa-brain"></i> Chat GPT Plus</a>
-            <a href="#" class="btn-item c-purple"><i class="fas fa-wand-magic-sparkles"></i> Canva Pro vĩnh viễn</a>
-            <a href="#" class="btn-item c-red"><i class="fab fa-youtube"></i> YouTube Premium</a>
-            <a href="#" class="btn-item c-green"><i class="fas fa-server"></i> Nord VPN siêu nhanh</a>
-            <a href="#" class="btn-item c-orange"><i class="fas fa-key"></i> Key HMA VPN</a>
-            <a href="#" class="btn-item c-indigo"><i class="fas fa-video"></i> CapCut Pro PC</a>
-            <a href="#" class="btn-item c-dark"><i class="fas fa-film"></i> Netflix 4K Premium</a>
+            <a href="#" class="btn-item c-dark"><i class="fa-solid fa-brain"></i> Chat GPT Plus</a>
+            <a href="#" class="btn-item c-purple"><i class="fa-solid fa-wand-magic-sparkles"></i> Canva Pro vĩnh viễn</a>
+            <a href="#" class="btn-item c-red"><i class="fa-brands fa-youtube"></i> YouTube Premium</a>
+            <a href="#" class="btn-item c-green"><i class="fa-solid fa-server"></i> Nord VPN siêu nhanh</a>
+            <a href="#" class="btn-item c-orange"><i class="fa-solid fa-key"></i> Key HMA VPN</a>
+            <a href="#" class="btn-item c-indigo"><i class="fa-solid fa-video"></i> CapCut Pro PC</a>
+            <a href="#" class="btn-item c-dark"><i class="fa-solid fa-film"></i> Netflix 4K Premium</a>
         </div>
     </div>
 </div>
