@@ -2,10 +2,114 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Shop Hùng Media - Kho Tài Nguyên</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Hùng Media - Hệ Thống Tài Nguyên Số</title>
+    <!-- Nhúng icon từ fontawesome để dùng biểu tượng -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        * { box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; }
+        body { background-color: #f0f2f5; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        
+        /* 4 Ô Tiện Ích Lớn Phía Trên */
+        .top-widgets { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 25px; }
+        .widget-box { display: flex; align-items: center; padding: 15px; border-radius: 10px; color: white; text-decoration: none; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .widget-box:hover { transform: translateY(-3px); }
+        .widget-box i { font-size: 35px; margin-right: 15px; }
+        .widget-box .text span { display: block; font-size: 12px; font-weight: normal; opacity: 0.9; }
+        
+        /* Màu cho 4 ô trên */
+        .w-blue { background: linear-gradient(135deg, #0062cc, #007bff); }
+        .w-teal { background: linear-gradient(135deg, #117a8b, #17a2b8); }
+        .w-purple { background: linear-gradient(135deg, #6f42c1, #8553e6); }
+        .w-orange { background: linear-gradient(135deg, #d39e00, #ffc107); color: #333; }
+        .w-orange i { color: #333; }
+
+        /* Khối Danh Mục Chính */
+        .category-block { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        .category-title { font-size: 16px; font-weight: bold; color: #333; border-left: 4px solid #007bff; padding-left: 10px; margin-bottom: 20px; text-transform: uppercase; }
+        
+        /* Lưới chứa các nút bấm tài nguyên */
+        .buttons-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
+        
+        /* Style cho từng Nút Sản Phẩm */
+        .btn-item { display: flex; align-items: center; justify-content: flex-start; padding: 10px 12px; border-radius: 6px; font-size: 11px; font-weight: bold; color: white; text-decoration: none; text-transform: uppercase; border: 1px solid rgba(0,0,0,0.1); box-shadow: inset 0 1px 0 rgba(255,255,255,0.15), 0 1px 1px rgba(0,0,0,0.075); transition: all 0.2s; }
+        .btn-item:hover { filter: brightness(1.2); transform: scale(1.02); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+        .btn-item i { font-size: 14px; margin-right: 8px; width: 16px; text-align: center; }
+
+        /* Mã màu giống trong ảnh của bạn */
+        .c-dark { background-color: #212529; }
+        .c-blue { background-color: #007bff; }
+        .c-indigo { background-color: #3f51b5; }
+        .c-pink { background-color: #e83e8c; }
+        .c-green { background-color: #28a745; }
+        .c-red { background-color: #dc3545; }
+        .c-teal { background-color: #20c997; }
+        .c-orange { background-color: #fd7e14; }
+        .c-purple { background-color: #6f42c1; }
+
+        /* Responsive di động */
+        @media (max-width: 768px) {
+            .top-widgets { grid-template-columns: repeat(2, 1fr); }
+            .buttons-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; padding-top: 50px; background-color: #f4f4f9;">
-    <h1>Chào mừng bạn đến với shophungmedia.github.io!</h1>
-    <p style="font-size: 18px; color: #555;">Website chia sẻ tài nguyên miễn phí đang được xây dựng...</p>
+<body>
+
+<div class="container">
+
+    <!-- 4 Ô TIỆN ÍCH TOP -->
+    <div class="top-widgets">
+        <a href="#" class="widget-box w-blue">
+            <i class="fab fa-facebook-square"></i>
+            <div class="text">Check Live FB <span>Miễn phí</span></div>
+        </a>
+        <a href="#" class="widget-box w-teal">
+            <i class="fas fa-key"></i>
+            <div class="text">Lấy Mã 2FA <span>Miễn phí</span></div>
+        </a>
+        <a href="#" class="widget-box w-purple">
+            <i class="smile-wink fas fa-icons"></i>
+            <div class="text">Icon Facebook <span>Miễn phí</span></div>
+        </a>
+        <a href="#" class="widget-box w-orange">
+            <i class="fas fa-user-circle"></i>
+            <div class="text">Random Face <span>Miễn phí</span></div>
+        </a>
+    </div>
+
+    <!-- KHỐI DANH MỤC 1: DỊCH VỤ FACEBOOK & TÀI KHOẢN -->
+    <div class="category-block">
+        <div class="category-title"><i class="fas fa-shopping-cart"></i> Danh mục tài khoản Clone / Via FB</div>
+        <div class="buttons-grid">
+            <!-- Thay dấu # bằng link chat Telegram/Zalo mua hàng của bạn -->
+            <a href="#" class="btn-item c-dark"><i class="fab fa-telegram"></i> Telegram mua nhanh</a>
+            <a href="#" class="btn-item c-pink"><i class="fab fa-instagram"></i> Instagram Via</a>
+            <a href="#" class="btn-item c-blue"><i class="fab fa-facebook-f"></i> Clone cổ ngâm</a>
+            <a href="#" class="btn-item c-blue"><i class="fab fa-facebook-f"></i> Via cổ kháng bvd</a>
+            <a href="#" class="btn-item c-green"><i class="fas fa-shield-alt"></i> BM kháng 902</a>
+            <a href="#" class="btn-item c-teal"><i class="fas fa-globe"></i> Acc Europe - Asia</a>
+            <a href="#" class="btn-item c-red"><i class="fas fa-flag-usa"></i> Acc USA chuẩn cổ</a>
+            <a href="#" class="btn-item c-indigo"><i class="fas fa-bolt"></i> Tút Reg Fanpage</a>
+        </div>
+    </div>
+
+    <!-- KHỐI DANH MỤC 2: PHẦN MỀM / KEY VPN / AI -->
+    <div class="category-block">
+        <div class="category-title"><i class="fas fa-robot"></i> Công nghệ AI & Phần mềm premium</div>
+        <div class="buttons-grid">
+            <a href="#" class="btn-item c-dark"><i class="fas fa-brain"></i> Chat GPT Plus</a>
+            <a href="#" class="btn-item c-purple"><i class="fas fa-wand-magic-sparkles"></i> Canva Pro vĩnh viễn</a>
+            <a href="#" class="btn-item c-red"><i class="fab fa-youtube"></i> YouTube Premium</a>
+            <a href="#" class="btn-item c-green"><i class="fas fa-vpn"></i> Nord VPN siêu nhanh</a>
+            <a href="#" class="btn-item c-orange"><i class="fas fa-key"></i> Key HMA VPN</a>
+            <a href="#" class="btn-item c-indigo"><i class="fas fa-video"></i> CapCut Pro PC/Mobile</a>
+            <a href="#" class="btn-item c-dark"><i class="fas fa-film"></i> Netflix 4K Premium</a>
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>
